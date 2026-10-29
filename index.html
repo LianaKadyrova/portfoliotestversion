@@ -66,8 +66,8 @@ nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1
 /* projects */
 .pj{border-top:1px solid var(--line);padding:32px 0 56px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
 .pj .im{grid-column:1/8;aspect-ratio:16/10;overflow:hidden;background:var(--surf)}
-.pj .im div{width:100%;height:100%;transition:transform .6s}
-.pj:hover .im div{transform:scale(1.04)}
+.pj .im img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.pj:hover .im img{transform:scale(1.04)}
 .pj .tx{grid-column:8/13;display:flex;flex-direction:column;gap:14px}
 .pj:nth-child(even) .im{grid-column:6/13;grid-row:1}.pj:nth-child(even) .tx{grid-column:1/6;grid-row:1}
 .pj h3{font-size:clamp(34px,4.6vw,72px);transition:transform .4s}
@@ -76,7 +76,7 @@ nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1
 @media(max-width:800px){.pj .im,.pj .tx,.pj:nth-child(even) .im,.pj:nth-child(even) .tx{grid-column:1/13;grid-row:auto}}
 /* about / lists */
 .about .ph2{grid-column:1/6;aspect-ratio:4/5;background:var(--surf);position:relative;overflow:hidden}
-.about .ph2::after{content:"Portrait";position:absolute;left:14px;bottom:12px;font:600 12px Manrope;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+
 .about .ph2 i{position:absolute;left:30%;top:18%;width:40%;aspect-ratio:1;border-radius:50%;background:#C9C3B6}
 .about .ph2 b{position:absolute;left:15%;top:62%;width:70%;height:60%;border-radius:50% 50% 0 0;background:#C9C3B6}
 .about .cp{grid-column:7/13}
@@ -93,6 +93,8 @@ nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1
 .st p{grid-column:8/13;margin:0;color:var(--mute)}
 @media(max-width:800px){.st .n,.st h3,.st p{grid-column:1/13}}
 .rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.ph img,.ph2 img,.cs .big img{width:100%;height:100%;object-fit:cover;display:block}
+.t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 /* contact */
 .ct h2{font-size:clamp(46px,9vw,150px);margin-bottom:40px}
 .ct .ls{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:36px}
@@ -110,7 +112,7 @@ body.cv #home{display:none}body.cv #case{display:block}
 </head>
 <body>
 <header id="hd"><div class="wrap">
-<a class="mark" href="#top" aria-label="Home">TOP</a>
+<a class="mark" href="#top" aria-label="Home">A.M.</a>
 <button id="mb" aria-expanded="false" aria-controls="nv">Menu</button>
 <nav id="nv" aria-label="Primary"><a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
 </div></header>
@@ -124,29 +126,29 @@ body.cv #home{display:none}body.cv #case{display:block}
 <span class="lbl">Social Media Manager &amp; Content Creator</span>
 <a class="lnk" href="#work">Explore selected work <span>↗</span></a>
 </div>
-<div class="ph" aria-hidden="true"><i></i><b></b><em></em><u></u></div>
+<div class="ph"><img src="images/addphoto.jpg" alt=""></div>
 </div>
 
 <div id="mq" aria-label="Animated wall of portfolio imagery"><div class="stage" id="stage" aria-hidden="true"></div><div class="fade"></div>
-<div class="fg"><div class="wrap" id="work"><span class="lbl">/ Selected work</span><h2 style="margin-top:20px">Ideas into action.</h2><p style="margin-top:24px">A selection of projects exploring creative strategy, brand communication, and digital marketing.</p><p style="margin-top:20px"><a class="lnk" href="#projects">Explore projects <span>↗</span></a></p></div></div></div>
+<div class="fg"><div class="wrap" id="work"><span class="lbl">02 / Selected work</span><h2 style="margin-top:20px">Ideas into action.</h2><p style="margin-top:24px">A selection of projects exploring creative strategy, brand communication, and digital marketing.</p><p style="margin-top:20px"><a class="lnk" href="#projects">Explore projects <span>↗</span></a></p></div></div></div>
 
 <section id="projects" style="border-top:0;padding-top:clamp(56px,7vw,100px)"><div class="wrap" id="pl"></div></section>
 
 <section id="about" class="about"><div class="wrap">
-<div class="grid sh"><span class="lbl">/ About</span><h2>Brands should sound like people, and look like they mean it.</h2></div>
-<div class="grid"><div class="ph2" aria-label="Portrait placeholder"><i></i><b></b></div>
+<div class="grid sh"><span class="lbl">01 / About</span><h2>Brands should sound like people, and look like they mean it.</h2></div>
+<div class="grid"><div class="ph2"><img src="images/addphoto.jpg" alt="Portrait" loading="lazy"></div>
 <div class="cp"><p>I plan, write, shoot and publish content for brands that want a clear voice on social. My work starts with the audience and ends with numbers I can explain.</p><p>Based in Toronto, I have run launch campaigns, community programs and integrated marketing communications for retail, culture and sustainability brands.</p></div></div>
 </div></section>
 
 <section id="expertise"><div class="wrap">
-<div class="grid sh"><span class="lbl">/ Expertise</span><h2>What I bring to a brief.</h2></div>
+<div class="grid sh"><span class="lbl">03 / Expertise</span><h2>What I bring to a brief.</h2></div>
 <div class="ex rv"><span class="lbl">A</span><h3>Strategy &amp; Marketing</h3><ul><li>Social media strategy</li><li>Campaign planning</li><li>Audience research</li><li>Community management</li><li>Analytics and reporting</li></ul></div>
 <div class="ex rv"><span class="lbl">B</span><h3>Creative &amp; Content</h3><ul><li>Copywriting and brand voice</li><li>Short-form video</li><li>Photography and art direction</li><li>Content calendars</li></ul></div>
 <div class="ex rv"><span class="lbl">C</span><h3>Tools &amp; Technical Skills</h3><ul><li>Meta Business Suite, TikTok, LinkedIn</li><li>Adobe Creative Suite, Figma, Canva</li><li>Google Analytics, Sprout Social</li><li>Notion, Asana</li></ul></div>
 </div></section>
 
 <section id="process"><div class="wrap">
-<div class="grid sh"><span class="lbl">/ Process</span><h2>Five steps, in order.</h2></div>
+<div class="grid sh"><span class="lbl">04 / Process</span><h2>Five steps, in order.</h2></div>
 <div class="st rv"><span class="n">01</span><h3>Research</h3><p>Audit the brand, the audience and the competitors before anything is made.</p></div>
 <div class="st rv"><span class="n">02</span><h3>Strategy</h3><p>Set goals, pick channels and define the message and the measures of success.</p></div>
 <div class="st rv"><span class="n">03</span><h3>Creation</h3><p>Write, shoot and design content that fits each platform.</p></div>
@@ -155,12 +157,14 @@ body.cv #home{display:none}body.cv #case{display:block}
 </div></section>
 
 <section id="contact" class="ct"><div class="wrap">
-<span class="lbl">/ Contact</span>
+<span class="lbl">05 / Contact</span>
 <h2 style="margin-top:24px">Let’s create something meaningful.</h2>
 <p style="max-width:40ch">Open to creative opportunities, collaborations, and conversations.</p>
-<div class="ls"><a class="lnk" href="mailto:lkadyrova8@mail.ru.com">Email <span>↗</span></a><a class="lnk" href="https://www.linkedin.com/in/liana-kadyrova/">LinkedIn <span>↗</span></a><a class="lnk" href="https://wa.me/77756791835?text=Hello!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk!" target="_blank" rel="noopener">WhatsApp <span>↗</span></a> <span>↗</span></a>
+<div class="ls"><a class="lnk" href="mailto:hello@example.com">Email <span>↗</span></a><a class="lnk" href="https://www.linkedin.com/">LinkedIn <span>↗</span></a><a class="lnk" href="https://wa.me/15555555555?text=Hello!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20talk." target="_blank" rel="noopener">WhatsApp <span>↗</span></a><a class="lnk" href="#contact">Download CV <span>↗</span></a></div>
+</div></section>
+<footer><div class="wrap"><span>A.M.</span><span>© 2026 All rights reserved</span><a href="#top">Back to top ↑</a></div></footer>
 </main>
-                    
+
 <main id="case"><div class="wrap cs" id="cs"></div></main>
 
 <script>
@@ -172,13 +176,13 @@ var P=[
 var $=function(s){return document.querySelector(s)};
 var cols=[["#C9C3B6","#171717","#8F9A94","#EAEAE6","#3B4A6B"],["#A8483A","#E3D5C3","#4F6B58","#C4CDC3","#171717"],["#8F9A94","#EAEAE6","#C9C3B6","#B9A47E","#171717"],["#E3D5C3","#3B4A6B","#C4CDC3","#A8483A","#C9C3B6"],["#171717","#C4CDC3","#E3D5C3","#4F6B58","#8F9A94"],["#B9A47E","#C9C3B6","#171717","#EAEAE6","#3B4A6B"]];
 var tg=["Brand","Video","Story","Launch","Reels","Copy","Grid","Campaign"],h="";
-cols.forEach(function(c,i){var t="";for(var k=0;k<2;k++)c.forEach(function(x,j){t+='<div class="t" style="background:'+x+'"><span>'+tg[(i+j)%8]+'</span></div>'});h+='<div class="col">'+t+'</div>'});
+cols.forEach(function(c,i){var t="";for(var k=0;k<2;k++)c.forEach(function(x,j){t+='<div class="t" style="background:'+x+'"><img src="images/addphoto.jpg" alt="" loading="lazy"></div>'});h+='<div class="col">'+t+'</div>'});
 $("#stage").innerHTML=h;
-var pl="";P.forEach(function(p,i){pl+='<a class="pj" href="#'+p.id+'"><div class="im"><div style="background:linear-gradient(135deg,'+p.a+' 0 55%,'+p.b+' 55%)"></div></div><div class="tx"><span class="lbl">0'+(i+1)+' / '+p.c+'</span><h3>'+p.n+'</h3><span class="ar" aria-hidden="true">↗</span></div></a>'});
+var pl="";P.forEach(function(p,i){pl+='<a class="pj" href="#'+p.id+'"><div class="im"><img src="images/addphoto.jpg" alt="'+p.n+'" loading="lazy"></div><div class="tx"><span class="lbl">0'+(i+1)+' / '+p.c+'</span><h3>'+p.n+'</h3><span class="ar" aria-hidden="true">↗</span></div></a>'});
 $("#pl").innerHTML=pl;
 function showCase(p){
 var i=P.indexOf(p),nx=P[(i+1)%3];
-$("#cs").innerHTML='<a class="lnk" href="#projects">← All projects</a><h1>'+p.n+'</h1><div class="grid"><p style="grid-column:1/8;font-size:clamp(20px,2.4vw,32px);line-height:1.35;margin:0">'+p.d+'</p></div><div class="big" style="background:linear-gradient(135deg,'+p.a+' 0 55%,'+p.b+' 55%)"></div><div class="meta"><div><span class="lbl">Category</span><p>'+p.c+'</p></div><div><span class="lbl">Year</span><p>'+p.y+'</p></div><div><span class="lbl">Role</span><p>'+p.r+'</p></div></div><div class="ex" style="margin-top:56px"><span class="lbl">Approach</span><h3>What I did</h3><ul>'+p.o.map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul></div><p style="margin:56px 0 0;padding:32px 0 96px;border-top:1px solid var(--line)"><span class="lbl">Next project</span><br><a class="hd" style="font-size:clamp(32px,5vw,72px)" href="#'+nx.id+'">'+nx.n+' ↗</a></p>';
+$("#cs").innerHTML='<a class="lnk" href="#projects">← All projects</a><h1>'+p.n+'</h1><div class="grid"><p style="grid-column:1/8;font-size:clamp(20px,2.4vw,32px);line-height:1.35;margin:0">'+p.d+'</p></div><div class="big"><img src="images/addphoto.jpg" alt="'+p.n+'"></div><div class="meta"><div><span class="lbl">Category</span><p>'+p.c+'</p></div><div><span class="lbl">Year</span><p>'+p.y+'</p></div><div><span class="lbl">Role</span><p>'+p.r+'</p></div></div><div class="ex" style="margin-top:56px"><span class="lbl">Approach</span><h3>What I did</h3><ul>'+p.o.map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul></div><p style="margin:56px 0 0;padding:32px 0 96px;border-top:1px solid var(--line)"><span class="lbl">Next project</span><br><a class="hd" style="font-size:clamp(32px,5vw,72px)" href="#'+nx.id+'">'+nx.n+' ↗</a></p>';
 document.title=p.n+" — Case study";}
 function route(){
 var id=location.hash.slice(1),p=P.filter(function(x){return x.id===id})[0];
