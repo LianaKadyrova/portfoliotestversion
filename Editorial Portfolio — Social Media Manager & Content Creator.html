@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Social Media Manager &amp; Content Creator — Toronto</title>
+<meta name="description" content="Portfolio of a Toronto-based social media manager and content creator: strategy, content and visual storytelling.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Oxygen:wght@400;700&display=swap">
+<style>
+:root{--bg:#F5F5F2;--ink:#171717;--mute:#777;--surf:#EAEAE6;--line:#D5D5D0;--pad:clamp(20px,4vw,64px);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Oxygen,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.hd{font-family:Manrope,"Helvetica Neue",Arial,sans-serif;font-weight:800;letter-spacing:-.045em;line-height:.98;margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1560px;margin:0 auto;padding:0 var(--pad)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.lbl{font:600 12px/1.4 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.lnk{font:600 13px Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:3px;display:inline-block}
+.lnk span{display:inline-block;transition:transform .3s}
+.lnk:hover span{transform:translate(3px,-3px)}
+section{border-top:1px solid var(--line);padding:clamp(72px,10vw,150px) 0}
+/* header */
+header{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.s{background:rgba(245,245,242,.92);backdrop-filter:blur(8px);border-color:var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.mark{font:800 18px Manrope;letter-spacing:-.04em}
+nav{display:flex;gap:28px}
+nav a{font:600 13px Manrope;position:relative;padding:4px 0;color:var(--mute);transition:color .2s}
+nav a:hover,nav a.on{color:var(--ink)}
+nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--ink)}
+#mb{display:none;background:none;border:0;font:600 13px Manrope;cursor:pointer;color:var(--ink)}
+@media(max-width:760px){#mb{display:block}nav{display:none;position:fixed;inset:60px 0 0;background:var(--bg);flex-direction:column;gap:0;padding:24px var(--pad)}nav.o{display:flex}nav a{font-size:40px;font-weight:800;letter-spacing:-.04em;padding:10px 0;border-bottom:1px solid var(--line)}nav a.on::after{display:none}}
+/* hero */
+.hero{padding:clamp(48px,8vw,120px) 0 clamp(56px,8vw,110px);border:0}
+.hero h1{font-size:clamp(46px,9.6vw,150px);grid-column:1/10}
+.hero .side{grid-column:10/13;align-self:end;display:flex;flex-direction:column;gap:20px}
+.hero .top{grid-column:1/13;display:flex;justify-content:space-between;margin-bottom:clamp(24px,4vw,56px)}
+.hero p{margin:0;max-width:34ch}
+.ph{grid-column:1/13;margin-top:48px;height:clamp(120px,16vw,240px);background:var(--surf);position:relative;overflow:hidden}
+.ph i{position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 calc(8.333% - 1px),var(--line) 0 8.333%)}
+.ph b{position:absolute;left:8.4%;top:18%;width:16.6%;height:64%;background:var(--ink)}
+.ph em{position:absolute;left:41.7%;top:18%;width:8.3%;height:64%;background:#C9C3B6}
+.ph u{position:absolute;left:66.7%;top:18%;width:24.9%;height:64%;background:#8F9A94}
+@media(max-width:900px){.hero h1{grid-column:1/13}.hero .side{grid-column:1/13;margin-top:32px}}
+/* section heads */
+.sh{margin-bottom:clamp(40px,6vw,88px)}
+.sh .lbl{grid-column:1/4}
+.sh h2{grid-column:4/13;font-size:clamp(40px,6.4vw,104px)}
+@media(max-width:900px){.sh .lbl,.sh h2{grid-column:1/13}.sh .lbl{margin-bottom:20px}}
+/* marquee */
+#mq{position:relative;height:clamp(560px,80vh,860px);overflow:hidden;border-top:1px solid var(--line);background:var(--surf)}
+#mq .stage{position:absolute;inset:-25% -20%;display:flex;gap:18px;justify-content:center;transform:perspective(1400px) rotateX(52deg) rotateZ(-38deg);transform-origin:center}
+.col{display:flex;flex-direction:column;gap:18px;width:clamp(150px,17vw,260px);flex:none;animation:up 46s linear infinite}
+.col:nth-child(even){animation-direction:reverse;animation-duration:58s}
+.col:nth-child(3n){animation-duration:70s}
+@keyframes up{to{transform:translateY(-50%)}}
+.t{aspect-ratio:4/5;position:relative;flex:none;overflow:hidden}
+.t span{position:absolute;left:10px;bottom:8px;font:700 10px Manrope;letter-spacing:.12em;text-transform:uppercase;color:rgba(23,23,23,.7)}
+.fade{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 62% 58% at 38% 50%,rgba(245,245,242,.97) 0,rgba(245,245,242,.8) 45%,rgba(245,245,242,0) 100%),linear-gradient(var(--bg),transparent 22%,transparent 78%,var(--bg)),linear-gradient(90deg,var(--bg),transparent 14%,transparent 86%,var(--bg))}
+#mq .fg{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:28px;z-index:2}
+#mq h2{font-size:clamp(48px,9vw,140px)}
+#mq p{max-width:38ch;margin:0}
+@media(max-width:700px){.col:nth-child(n+5){display:none}#mq .stage{inset:-10% -35%}}
+/* projects */
+.pj{border-top:1px solid var(--line);padding:32px 0 56px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.pj .im{grid-column:1/8;aspect-ratio:16/10;overflow:hidden;background:var(--surf)}
+.pj .im div{width:100%;height:100%;transition:transform .6s}
+.pj:hover .im div{transform:scale(1.04)}
+.pj .tx{grid-column:8/13;display:flex;flex-direction:column;gap:14px}
+.pj:nth-child(even) .im{grid-column:6/13;grid-row:1}.pj:nth-child(even) .tx{grid-column:1/6;grid-row:1}
+.pj h3{font-size:clamp(34px,4.6vw,72px);transition:transform .4s}
+.pj:hover h3{transform:translateX(8px)}
+.pj .ar{font-size:28px;opacity:0;transform:translate(-6px,6px);transition:.3s}.pj:hover .ar{opacity:1;transform:none}
+@media(max-width:800px){.pj .im,.pj .tx,.pj:nth-child(even) .im,.pj:nth-child(even) .tx{grid-column:1/13;grid-row:auto}}
+/* about / lists */
+.about .ph2{grid-column:1/6;aspect-ratio:4/5;background:var(--surf);position:relative;overflow:hidden}
+.about .ph2::after{content:"Portrait";position:absolute;left:14px;bottom:12px;font:600 12px Manrope;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.about .ph2 i{position:absolute;left:30%;top:18%;width:40%;aspect-ratio:1;border-radius:50%;background:#C9C3B6}
+.about .ph2 b{position:absolute;left:15%;top:62%;width:70%;height:60%;border-radius:50% 50% 0 0;background:#C9C3B6}
+.about .cp{grid-column:7/13}
+.about h2{font-size:clamp(30px,3.6vw,56px);margin-bottom:28px;line-height:1.05}
+@media(max-width:800px){.about .ph2,.about .cp{grid-column:1/13}.about .cp{margin-top:36px}}
+.ex{border-top:1px solid var(--line);padding:28px 0;display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.ex .lbl{grid-column:1/4}.ex h3{grid-column:4/8;font-size:clamp(24px,2.6vw,40px)}
+.ex ul{grid-column:8/13;list-style:none;margin:0;padding:0}
+.ex li{padding:6px 0;border-bottom:1px solid var(--line)}.ex li:last-child{border:0}
+@media(max-width:800px){.ex .lbl,.ex h3,.ex ul{grid-column:1/13}}
+.st{border-top:1px solid var(--line);padding:28px 0;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:baseline}
+.st .n{grid-column:1/4;font:800 clamp(48px,7vw,110px)/.9 Manrope;letter-spacing:-.06em}
+.st h3{grid-column:4/8;font-size:clamp(24px,2.6vw,40px)}
+.st p{grid-column:8/13;margin:0;color:var(--mute)}
+@media(max-width:800px){.st .n,.st h3,.st p{grid-column:1/13}}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+/* contact */
+.ct h2{font-size:clamp(46px,9vw,150px);margin-bottom:40px}
+.ct .ls{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:36px}
+footer{border-top:1px solid var(--line);padding:24px 0 32px;font:600 12px Manrope;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+/* case */
+#case{display:none;padding:clamp(40px,6vw,90px) 0 0}
+.cs h1{font-size:clamp(44px,8.4vw,130px);margin:28px 0 40px}
+.cs .big{aspect-ratio:21/9;margin:48px 0}
+.cs .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;border-top:1px solid var(--line);padding-top:20px}
+.cs .meta p{margin:4px 0 0}
+body.cv #home{display:none}body.cv #case{display:block}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap">
+<a class="mark" href="#top" aria-label="Home">A.M.</a>
+<button id="mb" aria-expanded="false" aria-controls="nv">Menu</button>
+<nav id="nv" aria-label="Primary"><a href="#work">Work</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="home">
+<div class="wrap hero grid" id="top">
+<div class="top lbl"><span>Social media / Content / Communication</span><span>Toronto, Canada</span></div>
+<h1>Creative thinking. Strategic impact.</h1>
+<div class="side">
+<p>I build meaningful connections between brands and audiences through strategy, content, and visual storytelling.</p>
+<span class="lbl">Social Media Manager &amp; Content Creator</span>
+<a class="lnk" href="#work">Explore selected work <span>↗</span></a>
+</div>
+<div class="ph" aria-hidden="true"><i></i><b></b><em></em><u></u></div>
+</div>
+
+<div id="mq" aria-label="Animated wall of portfolio imagery"><div class="stage" id="stage" aria-hidden="true"></div><div class="fade"></div>
+<div class="fg"><div class="wrap" id="work"><span class="lbl">02 / Selected work</span><h2 style="margin-top:20px">Ideas into action.</h2><p style="margin-top:24px">A selection of projects exploring creative strategy, brand communication, and digital marketing.</p><p style="margin-top:20px"><a class="lnk" href="#projects">Explore projects <span>↗</span></a></p></div></div></div>
+
+<section id="projects" style="border-top:0;padding-top:clamp(56px,7vw,100px)"><div class="wrap" id="pl"></div></section>
+
+<section id="about" class="about"><div class="wrap">
+<div class="grid sh"><span class="lbl">01 / About</span><h2>Brands should sound like people, and look like they mean it.</h2></div>
+<div class="grid"><div class="ph2" aria-label="Portrait placeholder"><i></i><b></b></div>
+<div class="cp"><p>I plan, write, shoot and publish content for brands that want a clear voice on social. My work starts with the audience and ends with numbers I can explain.</p><p>Based in Toronto, I have run launch campaigns, community programs and integrated marketing communications for retail, culture and sustainability brands.</p></div></div>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+<div class="grid sh"><span class="lbl">03 / Expertise</span><h2>What I bring to a brief.</h2></div>
+<div class="ex rv"><span class="lbl">A</span><h3>Strategy &amp; Marketing</h3><ul><li>Social media strategy</li><li>Campaign planning</li><li>Audience research</li><li>Community management</li><li>Analytics and reporting</li></ul></div>
+<div class="ex rv"><span class="lbl">B</span><h3>Creative &amp; Content</h3><ul><li>Copywriting and brand voice</li><li>Short-form video</li><li>Photography and art direction</li><li>Content calendars</li></ul></div>
+<div class="ex rv"><span class="lbl">C</span><h3>Tools &amp; Technical Skills</h3><ul><li>Meta Business Suite, TikTok, LinkedIn</li><li>Adobe Creative Suite, Figma, Canva</li><li>Google Analytics, Sprout Social</li><li>Notion, Asana</li></ul></div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<div class="grid sh"><span class="lbl">04 / Process</span><h2>Five steps, in order.</h2></div>
+<div class="st rv"><span class="n">01</span><h3>Research</h3><p>Audit the brand, the audience and the competitors before anything is made.</p></div>
+<div class="st rv"><span class="n">02</span><h3>Strategy</h3><p>Set goals, pick channels and define the message and the measures of success.</p></div>
+<div class="st rv"><span class="n">03</span><h3>Creation</h3><p>Write, shoot and design content that fits each platform.</p></div>
+<div class="st rv"><span class="n">04</span><h3>Execution</h3><p>Schedule, publish and engage with the community daily.</p></div>
+<div class="st rv"><span class="n">05</span><h3>Analysis</h3><p>Read the results, report plainly and feed what worked into the next cycle.</p></div>
+</div></section>
+
+<section id="contact" class="ct"><div class="wrap">
+<span class="lbl">05 / Contact</span>
+<h2 style="margin-top:24px">Let’s create something meaningful.</h2>
+<p style="max-width:40ch">Open to creative opportunities, collaborations, and conversations.</p>
+<div class="ls"><a class="lnk" href="mailto:hello@example.com">Email <span>↗</span></a><a class="lnk" href="https://www.linkedin.com/">LinkedIn <span>↗</span></a><a class="lnk" href="https://www.behance.net/">Behance <span>↗</span></a><a class="lnk" href="#contact">Download CV <span>↗</span></a></div>
+</div></section>
+<footer><div class="wrap"><span>A.M.</span><span>© 2026 All rights reserved</span><a href="#top">Back to top ↑</a></div></footer>
+</main>
+
+<main id="case"><div class="wrap cs" id="cs"></div></main>
+
+<script>
+(function(){
+var P=[
+{id:"case-indigo-book-club",n:"Indigo Book Club",c:"Community / Social",a:"#C9C3B6",b:"#3B4A6B",y:"2025",r:"Social lead",d:"A reading community built on social, turning book recommendations into a monthly habit.",o:["Defined a voice for the club across Instagram and TikTok","Built a monthly content calendar around reader picks","Reported engagement and community growth each month"]},
+{id:"case-trader-joes-canada-launch",n:"Trader Joe’s Canada Launch",c:"Launch / Retail",a:"#E3D5C3",b:"#A8483A",y:"2025",r:"Content creator",d:"A concept launch campaign introducing a familiar American retailer to Canadian shoppers.",o:["Developed launch messaging and a teaser sequence","Produced short-form video and photography","Planned local influencer and community outreach"]},
+{id:"case-ecopulse-marcom-campaign",n:"EcoPulse MarCom Campaign",c:"Integrated marketing",a:"#C4CDC3",b:"#4F6B58",y:"2024",r:"Strategy and content",d:"An integrated marketing communications campaign that made a sustainability message easy to act on.",o:["Researched audience attitudes toward everyday sustainability","Aligned social, email and print around one message","Set measures for reach, engagement and conversion"]}];
+var $=function(s){return document.querySelector(s)};
+var cols=[["#C9C3B6","#171717","#8F9A94","#EAEAE6","#3B4A6B"],["#A8483A","#E3D5C3","#4F6B58","#C4CDC3","#171717"],["#8F9A94","#EAEAE6","#C9C3B6","#B9A47E","#171717"],["#E3D5C3","#3B4A6B","#C4CDC3","#A8483A","#C9C3B6"],["#171717","#C4CDC3","#E3D5C3","#4F6B58","#8F9A94"],["#B9A47E","#C9C3B6","#171717","#EAEAE6","#3B4A6B"]];
+var tg=["Brand","Video","Story","Launch","Reels","Copy","Grid","Campaign"],h="";
+cols.forEach(function(c,i){var t="";for(var k=0;k<2;k++)c.forEach(function(x,j){t+='<div class="t" style="background:'+x+'"><span>'+tg[(i+j)%8]+'</span></div>'});h+='<div class="col">'+t+'</div>'});
+$("#stage").innerHTML=h;
+var pl="";P.forEach(function(p,i){pl+='<a class="pj" href="#'+p.id+'"><div class="im"><div style="background:linear-gradient(135deg,'+p.a+' 0 55%,'+p.b+' 55%)"></div></div><div class="tx"><span class="lbl">0'+(i+1)+' / '+p.c+'</span><h3>'+p.n+'</h3><span class="ar" aria-hidden="true">↗</span></div></a>'});
+$("#pl").innerHTML=pl;
+function showCase(p){
+var i=P.indexOf(p),nx=P[(i+1)%3];
+$("#cs").innerHTML='<a class="lnk" href="#projects">← All projects</a><h1>'+p.n+'</h1><div class="grid"><p style="grid-column:1/8;font-size:clamp(20px,2.4vw,32px);line-height:1.35;margin:0">'+p.d+'</p></div><div class="big" style="background:linear-gradient(135deg,'+p.a+' 0 55%,'+p.b+' 55%)"></div><div class="meta"><div><span class="lbl">Category</span><p>'+p.c+'</p></div><div><span class="lbl">Year</span><p>'+p.y+'</p></div><div><span class="lbl">Role</span><p>'+p.r+'</p></div></div><div class="ex" style="margin-top:56px"><span class="lbl">Approach</span><h3>What I did</h3><ul>'+p.o.map(function(x){return"<li>"+x+"</li>"}).join("")+'</ul></div><p style="margin:56px 0 0;padding:32px 0 96px;border-top:1px solid var(--line)"><span class="lbl">Next project</span><br><a class="hd" style="font-size:clamp(32px,5vw,72px)" href="#'+nx.id+'">'+nx.n+' ↗</a></p>';
+document.title=p.n+" — Case study";}
+function route(){
+var id=location.hash.slice(1),p=P.filter(function(x){return x.id===id})[0];
+if(p){document.body.classList.add("cv");showCase(p);window.scrollTo(0,0)}
+else{var was=document.body.classList.contains("cv");document.body.classList.remove("cv");document.title="Social Media Manager & Content Creator — Toronto";var e=id&&document.getElementById(id);if(e&&was)setTimeout(function(){e.scrollIntoView()},0);else if(!id&&was)window.scrollTo(0,0)}
+$("#nv").classList.remove("o");$("#mb").setAttribute("aria-expanded","false");}
+addEventListener("hashchange",route);route();
+$("#mb").onclick=function(){var o=$("#nv").classList.toggle("o");this.setAttribute("aria-expanded",o)};
+var hd=$("#hd");addEventListener("scroll",function(){hd.classList.toggle("s",scrollY>20)},{passive:true});
+var links=[].slice.call(document.querySelectorAll("nav a"));
+if("IntersectionObserver"in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=e.target.id==="projects"?"work":e.target.id;links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+k)})}})},{rootMargin:"-45% 0px -50% 0px"});
+["mq","projects","about","expertise","process","contact"].forEach(function(i){var e=document.getElementById(i);if(e){if(i==="mq")e.id="mq";io.observe(e)}});
+var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");ro.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(e){ro.observe(e)});
+}else document.querySelectorAll(".rv").forEach(function(e){e.classList.add("in")});
+})();
+</script>
+</body>
+</html>
